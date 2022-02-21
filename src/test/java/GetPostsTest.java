@@ -19,7 +19,7 @@ public class GetPostsTest extends BaseTest {
                 .assertThat().body("title[1]",equalTo("Drugi"))
                 .assertThat().body("author[1]",equalTo("Alicja")).
         and()
-                .assertThat().body("title[1]",equalTo("Trzeci"))
-                .assertThat().body("author[1]",equalTo("Weronika"));
+                .assertThat().body("title[2]",equalTo("Trzeci"))
+                .assertThat().body("author[2]",equalTo("Weronika"));
     }
 }
